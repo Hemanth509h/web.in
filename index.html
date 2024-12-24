@@ -16,7 +16,8 @@
     }
 
     nav {
-      width: 80%;
+      text-align: center;
+      width: 70%;
       margin: 15px 100px;
       padding: 8px 50px;
       background-color: rgba(9, 75, 108, 0.29);
@@ -192,11 +193,11 @@
     }
 
     .Achievements {
-      transform: translate(490%, 460%);
+      transform: translate(150%, 670%);
     }
 
     .rating {
-      transform: translate(340%, 660%);
+      transform: translate(50%, 790%);
     }
 
 
@@ -278,11 +279,11 @@
     }
 
     .card1 {
-      transform: translate(240px, 140px);
+      transform: translate(70px, 140px);
     }
 
     .card2 {
-      transform: translate(290px, 380px);
+      transform: translate(90px, 380px);
     }
 
 
@@ -329,7 +330,7 @@
       height: 546px;
       background: #023047;
       border-radius: 24px;
-      transform: translate(320px, 100px);
+      transform: translate(140px, 100px);
       position: absolute;
       z-index: 1;
     }
@@ -363,27 +364,7 @@
       display: flex;
     }
 
-    center {
-      text-align: center;
-      color: white;
-      font-size: 60px;
-      font-family: Raleway;
-      font-weight: 900;
-      line-height: 72px;
-      word-wrap: break-word;
-      position: absolute;
-      padding: 10px 40%;
-      padding-top: 70px;
-    }
-
-    .left2 {
-      width: 50%;
-      margin-top: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
+    .left2,
     .right2 {
       width: 50%;
       margin-top: 100px;
@@ -392,20 +373,29 @@
       align-items: center;
     }
 
+    center {
+      text-align: center;
+      color: white;
+      font-size: 50px;
+      font-family: Raleway, sans-serif;
+      font-weight: 800;
+      line-height: 65px;
+      word-wrap: break-word;
+      position: absolute;
+      padding: 70px 40% 10px;
+    }
+
     .course1,
     .course2 {
-      width: 526px;
-      height: 458px;
+      width: 426px;
+      height: 408px;
       background-color: #fff;
       border-radius: 24px;
-      padding-left: 28px;
-      transition: all 2s;
-    }
-    .hsrenrolnow{
-      width: 90%;
       display: flex;
-      justify-content:space-between;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      transition: all 2s;
     }
 
     .course1:hover,
@@ -413,76 +403,74 @@
       width: 826px;
       height: 518px;
       display: flex;
-      padding-left: 10px;
-
+      flex-direction: row;
+      align-items: center;
     }
 
     .course1:hover .Rectangle7,
     .course2:hover .Rectangle7 {
-      height: 275.99px;
-      padding-top: 100px;
+      width: 478px;
+      
     }
 
     .course1:hover .TitleAndDuration,
     .course2:hover .TitleAndDuration {
       display: block;
       width: 250px;
-
     }
 
-    .course1:hover .GameDesingEssentials {
-      font-size: 25px;
-    }
-
+   /* .course1:hover .GameDesingEssentials,
     .course2:hover .GameDesingEssentials1 {
-      font-size: 25px;
-
-    }
+    }*/
 
     .course1:hover .more-info,
     .course2:hover .more-info {
       display: contents;
       color: #023047;
-      font-family: Raleway;
-      font-weight: 700;
-      line-height: 25px;
-      transition: all 2s;
-
+      font-family: Raleway, sans-serif;
+      font-weight: 600;
+      line-height: 22px;
+      transition: all 3s;
     }
 
+    .course1:hover .hrs,.course2:hover .hrs{
+      margin-right: 30px;
+    }
+   .course2:hover .GameDesingEssentials1 {
+      font-size: 25px;
+    }
     .more-info {
       display: none;
-      transition: all 2s;
+      transition: all 3s;
     }
 
     .Rectangle7 {
-      transition: all 2s;
-      margin-top: 10px;
+      margin-top: 20px;
+      width: 378px;
+      transition: all 3s;
     }
 
     .TitleAndDuration {
-      padding-top: 30px;
-      padding-left: 40px;
-      transition: all 2s;
+      padding: 30px 0 0 40px;
+      transition: all 3s;
     }
 
     .GameDesingEssentials,
     .GameDesingEssentials1 {
       color: #023047;
-      font-size: 30px;
-      font-family: Raleway;
-      font-weight: 900;
-      line-height: 45px;
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+      line-height: 40px;
       word-wrap: break-word;
-      transition: all 4s;
+      transition: all 3s;
     }
 
     .GameDesingEssentials {
-      font-size: 30px;
+      font-size: 28px;
     }
 
     .GameDesingEssentials1 {
-      font-size: 25px;
+      font-size: 18px;
     }
 
     .hrs {
@@ -495,8 +483,16 @@
 
     .hrs1 {
       color: #023047;
-      font-family: Raleway;
-      font-weight: 900;
+      font-family: Raleway, sans-serif;
+      font-weight: 800;
+      /* Adjusted font weight */
+    }
+
+    .hsrenrolnow {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .section4 {
@@ -639,7 +635,7 @@
       nav {
         height: auto;
         margin: 15px 0px;
-        margin-left: 35px;
+        margin-left: 30px;
         width: 230px;
         transition: height 0.5s ease;
       }
@@ -799,13 +795,15 @@
         flex-direction: column;
         padding: 0px 10px;
       }
-      .course2{
+
+      .course2 {
         height: 383px;
       }
-      .hsrenrolnow{
-      justify-content:space-between;
-      align-items: center;
-    }
+
+      .hsrenrolnow {
+        justify-content: space-between;
+        align-items: center;
+      }
 
 
       .course1:hover,
@@ -840,7 +838,7 @@
         margin-top: 50px;
       }
 
-      .section4 {}
+      /*.section4 {}*/
 
       .getourapp {
         font-size: 40px
@@ -874,13 +872,9 @@
 
 
       form {
-
         display: flex;
-
         flex-direction: column;
-
         background-color: #070917;
-
         gap: 10px
       }
     }
@@ -988,11 +982,13 @@
         <div class="TitleAndDuration">
           <div class="GameDesingEssentials">Game Design Essentials</div>
           <div class="hsrenrolnow">
-          <div class="hrs"><img src="clocksvg.svg">
-            <p class="hrs1">8 HRS</p>
-          </div><div class="enrolnow">
-            <p>Enrol now</p></div> 
-        </div>
+            <div class="hrs"><img src="clocksvg.svg">
+              <p class="hrs1">8 HRS</p>
+            </div>
+            <div class="enrolnow">
+              <p>Enrol now</p>
+            </div>
+          </div>
           <div class="more-info">
             <p class="hrs1">Learn the fundamentals of game design, from concept creation to user engagement. This course
               includes
@@ -1010,8 +1006,10 @@
           <div class="hsrenrolnow">
             <div class="hrs"><img src="clocksvg.svg">
               <p class="hrs1">8 HRS</p>
-            </div><div class="enrolnow">
-              <p>Enrol now</p></div> 
+            </div>
+            <div class="enrolnow">
+              <p>Enrol now</p>
+            </div>
           </div>
           <div class="more-info">
             <p class="hrs1">Learn the fundamentals of game design, from concept creation to user engagement. This course
@@ -1078,6 +1076,11 @@
         section2.classList.add('visible');
       }
     });
+
+
+
+
+
 
   </script>
 
